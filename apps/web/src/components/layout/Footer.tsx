@@ -3,7 +3,7 @@
  */
 
 import { Link } from "react-router-dom";
-import { getCurrentBSDateString, toNepaliDigits } from "@/lib/bs-date";
+import { toNepaliDigits } from "@/lib/bs-date";
 
 export function Footer() {
   const currentYear = toNepaliDigits(new Date().getFullYear());

@@ -13,7 +13,6 @@ import {
   getCategories,
 } from "@/services/categories.service";
 import { NewsGrid } from "@/components/news/NewsGrid";
-import { NewsCard } from "@/components/news/NewsCard";
 import { NewsGridSkeleton, SidebarSkeleton } from "@/components/ui/Skeleton";
 import { ErrorState } from "@/components/ui/ErrorState";
 import { toNepaliDigits } from "@/lib/bs-date";

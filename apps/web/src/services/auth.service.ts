@@ -26,7 +26,11 @@ export async function login(credentials: LoginCredentials): Promise<AuthUser> {
     credentials.email,
     credentials.password
   );
-  return getCurrentUser();
+  const user = await getCurrentUser();
+  if (!user) {
+    throw new Error("Login failed");
+  }
+  return user;
 }
 
 /**

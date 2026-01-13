@@ -9,7 +9,7 @@ import { Link, NavLink } from "react-router-dom";
 import type { Category, Article } from "@/types";
 import { getCategories } from "@/services/categories.service";
 import { getBreakingNews } from "@/services/news.service";
-import { getCurrentBSDateString, toNepaliDigits } from "@/lib/bs-date";
+import { getCurrentBSDateString } from "@/lib/bs-date";
 
 export function Header() {
   const [categories, setCategories] = useState<Category[]>([]);

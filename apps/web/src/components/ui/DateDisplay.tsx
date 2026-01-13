@@ -4,7 +4,7 @@
  * Shows dates in BS and AD format with Nepali localization.
  */
 
-import { formatDualDate, getRelativeTimeNepali } from "@/lib/bs-date";
+import { formatDualDate } from "@/lib/bs-date";
 
 interface DateDisplayProps {
   /** Date string or Date object to display */
